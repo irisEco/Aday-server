@@ -1,0 +1,24 @@
+<html>
+    <head>
+      <title>{{title}}</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      {% block head %}
+      <link rel="stylesheet">
+      {% endblock %}
+    </head>  
+    <body>
+    {% include "./header.html" %}
+
+      {% block body %}
+      <h1>this is body</h1>
+      {% endblock %}
+
+      {% include "./footer.html" %}
+
+      {% block content %}
+      <script>
+        //this is place for javascript
+      </script>
+      {% endblock %}
+    </body>
+  </html>
